@@ -153,7 +153,7 @@ describe('MediaConnection', () => {
       mc._negotiator.emit(Negotiator.EVENTS.offerCreated.key, offer);
     });
 
-    it("should cleanup the connection on negotiator 'iceConnectionDisconnected' event", () => {
+    it("should cleanup the connection on negotiator 'iceConnectionFailed' event", () => {
       mc.open = true;
       const spy = sinon.spy(mc, 'close');
 

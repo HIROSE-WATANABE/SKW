@@ -766,7 +766,7 @@ describe('Negotiator', () => {
         });
 
         describe("when pc.iceConnectionState is 'failed'", () => {
-          it("should emit 'iceConnectionDisconnected'", done => {
+          it("should emit 'iceConnectionFailed'", done => {
             negotiator.on(Negotiator.EVENTS.iceConnectionFailed.key, () => {
               done();
             });

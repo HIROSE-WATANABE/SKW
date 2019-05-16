@@ -263,7 +263,7 @@ describe('SFURoom', () => {
         });
       });
 
-      describe('iceConnectionDisconnected', () => {
+      describe('iceConnectionFailed', () => {
         it('should call close', () => {
           const closeStub = sinon.spy(sfuRoom, 'close');
 
